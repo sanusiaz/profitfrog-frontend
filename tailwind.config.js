@@ -10,7 +10,8 @@ module.exports = {
         darkTextColor: '#b8bac0',
         textColor: "#7367f0",
         active: '#84c225',
-        customGreen: '#84c225'
+        customGreen: '#84c225',
+        customHoverGreen: '#98df2a'
       },
       fontFamily: {
         Poppins: ['Poppins', 'sans-serif'],
@@ -28,7 +29,7 @@ module.exports = {
         Lato: ['Lato', 'sans-serif']
       },
       fontSize: {
-        larger: '16px'
+        larger: '15.7px'
       },
       padding: {
         largerScreenPadding: '10px 160px',

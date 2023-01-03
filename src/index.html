@@ -10,21 +10,48 @@
     <link rel="stylesheet" href="./assets/css/output.css">
 </head>
 <body class="bg-gray-300 font-Montserrat">
-    <header class="shadow-b-lg text-larger items-center flex align-center justify-between bg-white border border-gray-300 p-largerScreenPadding py-0">
+    <header class="shadow-b-lg text-larger items-center flex align-center justify-between bg-white border border-gray-300 p-largerScreenPadding py-0 gap-14">
         <!-- Logo -->
         <a href="./index.html" class="py-1">
             <img src="./assets/images/redesign_header_logo.svg" height="70px" width="90px" alt="Logo">
         </a>
 
-        <nav class="p-0 m-0">
-            <ul class="flex gap-2 items-center">
-                <li class="font-semibold py-7 border-b-4 transiton-all duration-500 hover:text-customGreen border-active"><a href="./profitability-modeling.html">Profitability Modeling</a></li>
-            </ul>
-        </nav>
-
-        <div class="font-semibold flex gap-4 items-center">
-            <a class="" href="./login.html">Login</a>
-            <a class="bg-customGreen hover:bg-customGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white" href="./signup.html">Signup</a>
+        <div class="flex justify-between w-full">
+            <nav class="p-0 m-0 flex items-start">
+                <ul class="flex gap-7 items-center">
+                    <li class="group ">
+                        <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./profitability-modeling.html">Profitability Modeling</a>
+                    </li>
+                    <li class="group ">
+                        <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./scenario-planning.html">Scenario Planning</a>
+                    </li>
+                    <li class="group ">
+                        <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./pricing.html">Pricing</a>
+                    </li>
+    
+                    <li class="group relative">
+                        <span class="font-semibold flex items-center align-center gap-1 py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen group-hover:hover:text-customGreen cursor-pointer hover:border-active group-hover:border-active" href="#">
+                            <span>Info</span>
+    
+                            <span class="group-hover:rotate-90 stroke:bg-gray-600 transition-all duration-200">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </span>
+                        </span>
+    
+                        <div class="absolute hidden h-max group-hover:flex bg-white rounded shadow-lg border border-gray-200 left-0 p-0 w-max max-w-[200px]">
+                            <ul class="flex flex-col gap-3">
+                                <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./blog.html">Blog</a></li>
+                                <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="font-semibold flex gap-4 items-center">
+                <a class="text-gray-700 hover:text-customGreen" href="./login.html">Login</a>
+                <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white" href="./signup.html">Signup</a>
+            </div>
         </div>
     </header>
 
