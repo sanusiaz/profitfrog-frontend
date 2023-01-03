@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         bgColor: '#f8f8f8',
+        bgSectionLightColor: 'rgb(244, 251, 255)',
         darkBgColor: '#171b2e',
         darkSectionBgColor: '#262d42',
         darkTextColor: '#b8bac0',
@@ -32,7 +33,7 @@ module.exports = {
         larger: '15.7px'
       },
       padding: {
-        largerScreenPadding: '10px 160px',
+        largerScreenPadding: '35px 170px',
         mediumScreenPadding: '',
         miniScreenPadding: '',
         phonesPadding: ''

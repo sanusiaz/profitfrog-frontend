@@ -8,9 +8,16 @@
 
 
     <link rel="stylesheet" href="./assets/css/output.css">
+
+
+    <!-- Favicon Images -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+
 </head>
-<body class="bg-gray-300 font-Montserrat">
-    <header class="shadow-b-lg text-larger items-center flex align-center justify-between bg-white border border-gray-300 p-largerScreenPadding py-0 gap-14">
+<body class=" font-Montserrat text-[#3d3c44]">
+    <header class="shadow-md fixed top-0 z-50 w-full text-larger items-center flex align-center justify-between bg-white border border-gray-300 p-largerScreenPadding py-0 gap-14">
         <!-- Logo -->
         <a href="./index.html" class="py-1">
             <img src="./assets/images/redesign_header_logo.svg" height="70px" width="90px" alt="Logo">
@@ -56,8 +63,60 @@
     </header>
 
 
-    <main>
+    <main class="pt-20">
+        <section class="bg-bgSectionLightColor p-largerScreenPadding grid grid-cols-1 md:grid-cols-2 place-content-center ">
+            <div class="flex h-full gap-10 pb-10 justify-between flex-col ">
+                <span>
+                    <span><a class="underline" href="./index.html">Main</a></span> | <span>Profitability Modeling</span>
+                </span>
 
+                <div class="flex flex-col gap-5">
+                    <h1 class="font-[600] text-5xl capitalize leading-tight">Profitability Modeling Software for Small Businesses</h1>
+
+                    <div class="text-gray-400 font-medium w-1/2">
+                        Conquer uncertainty with profitability modeling and <a class="text-blue-400 underline inline break-words" href="/scenario-planning.html"> scenario planning</a>&nbsp; superpowers and seize control of your company’s financial destiny.
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-[70px] hidden md:block">
+                <img src="./assets/images/dashboard_1.svg" alt="dashboard_image" class="object-cover drop-shadow-xl rounded-2xl">
+            </div>
+        </section>
+
+
+        <section class="p-largerScreenPadding gap-10 grid grid-cols-1 md:grid-cols-2 place-content-center">
+            
+            <div class="flex flex-col gap-10">
+                <h1 class="font-semibold text-2xl">Forecast Profitability. Reduce Fear and Uncertainty.</h1>
+
+                <p class="text-gray-300">
+                    Owners of small businesses deal with crushing uncertainty about the future. With dozens or hundreds of variables - most outside your control - it’s hard to feel confident in your business plan. Profit modeling is the answer. You can clearly identify the variables under your control, and how you can steer your business to greater profit.
+                </p>
+
+                <p class="text-gray-300">
+                    Our software gives you a clear view of present and future profitability and allows you to model different what-if scenarios.
+                </p>
+
+                <ul class="list-disc ">
+                    <li>Dynamically adjust fixed and variable costs, per customer profitability, gross revenue, and other economic inputs.</li>
+
+                    <li>Watch your profit margin change before your eyes in response.</li>
+
+                    <li>Get visibility into which business levers you can pull to maximize profit.</li>
+
+                    <li>Gain new insight into which costs and liabilities are dragging your business performance down.</li>
+                </ul>
+
+                <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white w-max" href="./signup.html">Signup</a>
+            </div>
+
+            <div>
+
+                <img src="./assets/images/dashboard_2.svg" alt="" class="object-cover drop-shadow-xl rounded-2xl">
+            </div>
+            
+        </section>
     </main>
 
 
