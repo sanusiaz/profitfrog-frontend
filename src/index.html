@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profit Modelling Software for small businesses</title>
 
-
+    <!-- Tailwind css output file -->
     <link rel="stylesheet" href="./assets/css/output.css">
 
 
     <!-- Favicon Images -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
 
     <!-- Glider Js -->
     <script src="https://unpkg.com/@glidejs/glide"></script>
@@ -28,7 +28,7 @@
 
 </head>
 <body class=" font-Montserrat text-[#3d3c44]">
-    <header class="shadow-md fixed top-0 z-50 w-full text-larger items-center flex align-center justify-between bg-white border border-gray-300 p-largerScreenPadding py-0 gap-14">
+    <header class="shadow-md fixed top-0 z-50 w-full text-larger items-center flex align-center justify-between bg-white border-b border-gray-300 p-largerScreenPadding py-0 gap-14">
         <!-- Logo -->
         <a href="./index.html" class="py-1">
             <img src="./assets/images/redesign_header_logo.svg" height="70px" width="90px" alt="Logo">
@@ -400,17 +400,48 @@
 
 
     <footer>
+        <section class="p-largerScreenPadding py-10">
+            <div class="flex place-content-center place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col gap-2">
+                    <a href="./contact.html">Contact Us</a>
+                    <a href="./privacy.html">Privacy Policy</a>
+                </div>
 
+                <div>
+                    <span
+                        class="font-semibold text-lg">
+                        &copy; Profit Frog
+                    </span>
+
+                    <span
+                        class="block relative flex gap-1 align-middle items-center hover:bg-gray-300 bg-transparent rounded-2xl group transition-all duration-200 cursor-pointer">
+                        <img src="./assets/images/linkedin.svg" alt="Likedin Logo">
+
+                        <span class="p-1 px-3 transition-all duration-200 group-hover:duration-200">LinkedIn</span>
+                    </span>
+                </div>
+
+
+                <div class="relative">
+                    <div class="group p-0 m-0">
+                        <span class="font-semibold text-gray-700">Recources</span>
+
+                        <div
+                                class="absolute hidden h-max group-hover:flex bg-white rounded shadow-lg border border-gray-200  p-0 w-max max-w-[200px] -left-10"
+                                style="bottom: 30px;"
+                        >
+                            <ul class="flex flex-col gap-3 text-sm">
+                                <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./understanding-cogs.html">Understanding COGS</a></li>
+                                <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">What is Dynamic Planing</a></li>
+                                  <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">What is Financial Model?</a></li>
+                                  <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">Understanding FP&A</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </footer>
-
-    <style>
-
-          .show {
-            opacity: 1;
-            transform: translateX(0px);
-            transition: all 350ms ease-in-out 200ms; 
-          }
-    </style>
 
     <script>
         var titles = document.querySelectorAll('h1')
@@ -432,9 +463,20 @@
         glide.mount()
 
     </script>
+    <style>
+
+        .show {
+            opacity: 1;
+            transform: translateX(0px);
+            transition: all 350ms ease-in-out 200ms;
+        }
+
+    </style>
 
     <script>
         $(document).ready(function () {
+
+            // Add click events to show faq group
             $("#faq div.faq-group").click(function () {
                 let __that = $(this);
                 __that.find('.inner').slideToggle();
