@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profit Modelling Software for small businesses</title>
+
+  <!-- Tailwind css output file -->
+  <link rel="stylesheet" href="./assets/css/output.css">
+
+
+  <!-- Favicon Images -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+
+  <!-- Glider Js -->
+  <script src="https://unpkg.com/@glidejs/glide"></script>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <style>
+    .glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}
+
+  </style>
+
+</head>
+<body class=" font-Montserrat text-[#3d3c44]">
+<header class="shadow-md fixed top-0 z-50 w-full text-larger items-center flex align-center justify-between bg-white border-b border-gray-300 p-largerScreenPadding py-0 gap-14">
+  <!-- Logo -->
+  <a href="./index.html" class="py-1">
+    <img src="./assets/images/redesign_header_logo.svg" height="70px" width="90px" alt="Logo">
+  </a>
+
+  <div class="flex justify-between w-full">
+    <nav class="p-0 m-0 flex items-start">
+      <ul class="flex gap-7 items-center">
+        <li class="group ">
+          <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./profitability-modeling.html">Profitability Modeling</a>
+        </li>
+        <li class="group ">
+          <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./scenario-planning.html">Scenario Planning</a>
+        </li>
+        <li class="group ">
+          <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./pricing.html">Pricing</a>
+        </li>
+
+        <li class="group relative">
+                        <span class="font-semibold flex items-center align-center gap-1 py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen group-hover:hover:text-customGreen cursor-pointer hover:border-active group-hover:border-active" href="#">
+                            <span>Info</span>
+
+                            <span class="group-hover:rotate-90 stroke:bg-gray-600 transition-all duration-200">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            </span>
+                        </span>
+
+          <div class="absolute hidden h-max group-hover:flex bg-white rounded shadow-lg border border-gray-200 left-0 p-0 w-max max-w-[200px]">
+            <ul class="flex flex-col gap-3">
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./blog.html">Blog</a></li>
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./about.html">About Us</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="font-semibold flex gap-4 items-center">
+      <a class="text-gray-700 hover:text-customGreen" href="./login.html">Login</a>
+      <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white" href="./signup.html">Signup</a>
+    </div>
+  </div>
+</header>
+
+
+<main class="pt-20">
+  <section class="bg-bgSectionLightColor p-largerScreenPadding grid grid-cols-1 md:grid-cols-2 place-content-center ">
+    <div class="flex h-full gap-10 pb-10 justify-between flex-col ">
+                <span>
+                    <span><a class="underline" href="./index.html">Main</a></span> | <span>Profitability Modeling</span>
+                </span>
+
+      <div class="flex flex-col gap-5">
+        <h1 class="font-[600] text-5xl capitalize leading-tight">Profitability Modeling Software for Small Businesses</h1>
+
+        <div class="text-gray-400 font-medium w-1/2">
+          Conquer uncertainty with profitability modeling and <a class="text-blue-400 underline inline break-words" href="/scenario-planning.html"> scenario planning</a>&nbsp; superpowers and seize control of your company’s financial destiny.
+        </div>
+      </div>
+    </div>
+
+    <div class="py-[70px] hidden md:block">
+      <img src="./assets/images/dashboard_1.svg" alt="dashboard_image" class="object-cover drop-shadow-xl rounded-2xl">
+    </div>
+  </section>
+
+
+  <section class="p-largerScreenPadding gap-10 grid grid-cols-1 md:grid-cols-2 place-content-center">
+
+    <div class="flex flex-col gap-10">
+      <h1 class="font-semibold text-2xl">Forecast Profitability. Reduce Fear and Uncertainty.</h1>
+
+      <p class="text-gray-700">
+        Owners of small businesses deal with crushing uncertainty about the future. With dozens or hundreds of variables - most outside your control - it’s hard to feel confident in your business plan. Profit modeling is the answer. You can clearly identify the variables under your control, and how you can steer your business to greater profit.
+      </p>
+
+      <p class="text-gray-700 p-0">
+                    <span class="p-0">
+                        Our software gives you a clear view of present and future profitability and allows you to model different what-if scenarios.
+                    </span>
+
+      <ul class="list-disc px-10 py-0">
+        <li>Dynamically adjust fixed and variable costs, per customer profitability, gross revenue, and other economic inputs.</li>
+
+        <li>Watch your profit margin change before your eyes in response.</li>
+
+        <li>Get visibility into which business levers you can pull to maximize profit.</li>
+
+        <li>Gain new insight into which costs and liabilities are dragging your business performance down.</li>
+      </ul>
+      </p>
+
+
+      <div class="">
+        <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-3 px-7 rounded text-white w-max" href="./signup.html">Signup</a>
+
+        <span class="font-light text-gray-500 block relative py-4 text-sm">No credit card required</span>
+      </div>
+    </div>
+
+    <div>
+
+      <img src="./assets/images/dashboard_2.svg" alt="" class="object-cover drop-shadow-xl rounded-2xl">
+    </div>
+
+  </section>
+
+  <section class="p-largerScreenPadding py-16">
+    <h2 class="font-semibold text-3xl text-center mb-4 block relative">See Why Small Businesses Choose Profit Frog</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 pt-10 place-content-center place-items-center">
+      <div><img src="./assets/images/business_1.svg" alt="business_partners"></div>
+      <div><img src="./assets/images/business_2.svg" alt="business_partners"></div>
+      <div><img src="./assets/images/business_3.svg" alt="business_partners"></div>
+      <div><img src="./assets/images/business_4.svg" alt="business_partners"></div>
+    </div>
+  </section>
+
+
+  <section class="p-largerScreenPadding py-20 bg-bgSectionLightColor gap-10 grid grid-cols-1 md:grid-cols-2 place-content-center">
+
+    <div class="flex flex-col gap-5">
+      <h1 class="font-semibold text-2xl">Profit Model Example: How Profit Frog Can Help</h1>
+
+      <p class="text-gray-700">
+        An example of profitability modeling: a fictional restaurant chain, Taco Fiesta, wants  to expand after experiencing its largest post-COVID revenue spike. All three locations are operating at maximum capacity during prime lunch and dinner hours.
+      </p>
+
+      <p class="text-gray-700">
+        Taco Fiesta is considering opening another restaurant in a neighboring city. One of the owners has the thought to invest in a couple of food trucks instead.
+      </p>
+
+      <p class="text-gray-700 p-0">
+                    <span class="p-0">
+                        Fortunately, Taco Fiesta is a Profit Frog user and runs profit modeling on both scenarios:
+                    </span>
+
+      <ul class="list-disc px-10 py-0">
+        <li>Open a new restaurant location</li>
+
+        <li>Deploy one or more food trucks</li>
+
+      </ul>
+      </p>
+      <p class="text-gray-700">
+        After modeling both scenarios through Profit Frog, they see that their profit margin per restaurant is 8%, while a food truck will have a 23% profit margin.
+      </p>
+      <p class="text-gray-700">
+        Taco Fiesta decides to invest in one food truck immediately, followed by 2 more in subsequent months. They hold off opening any new restaurants
+      </p>
+
+
+      <div class="">
+        <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-3 px-7 rounded text-white w-max" href="./signup.html">Signup</a>
+
+        <span class="font-light text-gray-500 block relative py-4 text-sm">No credit card required</span>
+      </div>
+    </div>
+
+    <div class="p-5">
+
+      <img src="./assets/images/help_!.svg" alt="" class="object-cover drop-shadow-xl rounded-2xl">
+    </div>
+
+  </section>
+
+  <section class="p-largerScreenPadding py-20">
+    <h2 class="font-semibold text-3xl text-center mb-4 block relative">What Profit Frog Customers are Saying</h2>
+
+
+    <div class="relative p-0 m-0">
+      <div class="glide px-20">
+        <div class="glide__track " data-glide-el="track" >
+          <ul class="glide__slides cursor-pointer">
+            <li class="glide__slide p-3">
+              <div class="flex gap-5 place-content-center place-items-center">
+                <img src="./assets/images/person_1.avif" class="rounded-full h-64 w-64 border shadow-lg" alt="">
+
+                <div class="flex flex-col gap-3 pl-10">
+                  <p class="italic font-normal text-lg">
+                    Profit Frog truly has no rivals when it comes to budgeting and forecasting software. It is the first online tool that cuts to the chase and is extremely easy to use. Now I can visualize my sales goals in a matter of seconds and get multiple tailored plans that are relevant and achievable.
+                  </p>
+
+                  <span class="font-bold text-xl block mt-2">Zach S. - Small Business Owner</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow absolute group hover:bg-[#feb92e] hover:text-white transition-all duration-200 hover:duration-200 top-[45%] left-0 glide__arrow--left rounded-full h-[40px] w-[40px] border border-red-600 flex align-center justify-center items-center" data-glide-dir="&lt;">
+            <svg class="w-4 h-4 stroke-gray-600 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
+          <button class="glide__arrow group absolute hover:bg-[#feb92e] hover:text-white transition-all duration-200 hover:duration-200 top-[45%] right-0 glide__arrow--right rounded-full h-[40px] w-[40px] border border-red-600 flex align-center justify-center items-center" data-glide-dir="&gt;">
+            <svg class="w-4 h-4 stroke-gray-600 group-hover:stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-largerScreenPadding py-20 gap-10 grid grid-cols-1 md:grid-cols-2 place-content-center">
+
+    <div class="flex flex-col gap-5">
+      <h1 class="font-bold text-2xl">Why Use Profitability Models for Forecasting?</h1>
+
+      <p class="text-gray-700">
+        Most financial analysis software focuses on modeling revenue or cashflow. We focus on profit. Profit models are superior to revenue models.
+      </p>
+
+      <h1 class="font-semibold text-2xl">Profit Modeling is Better than Revenue Modeling</h1>
+
+      <p class="text-gray-700">
+        Cashflow, or gross revenue, is only part of the picture. Expenses - fixed and variable costs - make up the other component. Financial modeling of revenue only can lead you astray.
+      </p>
+
+
+      <h1 class="font-semibold text-2xl">You Care About Profit More than Revenue</h1>
+      <p class="text-gray-700">
+        Imagine you own a business doing $10M per year with a 10% profit margin. You have a million bucks a year profit.
+      </p>
+      <p class="text-gray-700">
+        Now imagine an opportunity to increase revenue to $12M per year. Sounds pretty good, right?
+      </p>
+      <p class="text-gray-700">
+        Not so fast.
+      </p>
+      <p class="text-gray-700">
+        What if that extra $2M per year in revenue dropped your overall profit margin to 6%? Now you’re working harder for less money. Your annual profits just shrunk by $280,000 to just $720,000 per year.
+      </p>
+      <p class="text-gray-700">
+        By modeling profit instead of revenue only, you can maximize the only thing you really care about in the end: the excess money that the business generates after expenses. Money you get to decide what to do with.
+      </p>
+    </div>
+
+    <div class="p-5">
+
+      <img src="./assets/images/forcasting.avif" alt="" class="object-cover drop-shadow-xl rounded-2xl">
+    </div>
+
+  </section>
+
+
+  <section class="p-largerScreenPadding py-16">
+    <div class="flex gap-8 flex-col items-center align-middle">
+      <h2 class="font-semibold text-3xl text-center block relative">Start Your Free Profit Frog Trial Today</h2>
+
+      <span class="font-medium text-lg text-gray-600 text-center">Seize control of your financial destiny and start understanding how to maximize profitability in your small business.</span>
+
+      <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-3 px-7 rounded text-white w-max" href="./new_trail.html">Start New Trail</a>
+    </div>
+  </section>
+
+
+
+  <!-- Faq Section -->
+  <section id="faq" class="p-largerScreenPadding py-16 bg-bgSectionLightColor flex flex-col gap-10">
+    <h2 class="font-semibold text-3xl text-center block relative">Profit Modeling FAQ</h2>
+
+
+    <div class="flex flex-col gap-5">
+
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>What is the best financial profitability model?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          The best financial profitability model is the one that puts you in the driver’s seat of your business. As a small business owner, you don’t need a complicated analytic model created for Fortune 100 companies. And you definitely don’t have time to be buried in Excel spreadsheets. You need a simple, actionable snapshot of your business drivers and how changes to them can affect business profitability. From asset turnover to the impact of various product offerings to the cost of labor, Profit Frog gives you full visibility of what matters so you can forge your own destiny.
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>What is the profit model formula?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          The simplest profit model formula is that profit equals net revenue minus Cost of Goods Sold minus expenses.  It doesn't need to get more complex than that.  Some forecasting methods overcomplicate things.  We don't.  Our profitability analysis software has everything a small business needs; nothing it doesn't.
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>What KPI is most important for measuring profitability?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          <p class="py-2">
+            Net profit is the most important KPI for measuring profitability. Some types of profit models focus on gross profit, which is not true profit. We focus on net profit, which is true profit.
+          </p>
+          <p class="py-2">
+            Gross profit is total revenue minus direct expenses. It does not factor overhead, taxes, or other “indirect” expenses.
+          </p>
+          <p class="py-2">
+            Net profit is actual profit. It’s gross profit, minus ALL other expenses. It’s the number that you as a business owner really care about. And it’s the number we help you maximize.
+          </p>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>How do you create a profit model?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          <p>To create a profit model for your small business, <a href="./login.html">log in to your ProfitFrog account</a> and enter your business variables. It’s so easy. Our forecasting software will generate a profit model, and you can dynamically interact with it by changing various inputs and watching how they affect profitability. It’s magic for your business.</p>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>What is profitability projection?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          <p class="py-2">
+            A profitability projection, also termed a profit and loss forecast (or P&L forecast for short), is a prediction or projection of how much money your business will make based on specific conditions you define. For example, you can forecast how much your profit will be if you release a new product or service, if you alter pricing, if costs increase or decrease, or for any number of other variables. Profit forecasting is crucial for navigating changing market conditions and unknowns.
+          </p>
+          <p class="py-2">
+            Profit Frog allows small businesses to do this type of P&L forecasting easily and without needing to wade through complicated analytical models.
+          </p>
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="border faq-group overflow-hidden cursor-pointer group border-gray-100 shadow-lg rounded-2xl bg-white ">
+        <div class="flex gap-6 items-center align-middle border-b font-semibold border-gray-300 p-5">
+                        <span>
+                            <svg class="w-4 h-4 transition-all duration-200 " fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </span>
+          <span>What KPI is most important for measuring profitability?</span>
+        </div>
+
+        <div class="p-5 px-10 hidden inner">
+          <p class="py-2">
+            Net profit is the most important KPI for measuring profitability. Some types of profit models focus on gross profit, which is not true profit. We focus on net profit, which is true profit.
+          </p>
+          <p class="py-2">
+            Gross profit is total revenue minus direct expenses. It does not factor overhead, taxes, or other “indirect” expenses.
+          </p>
+          <p class="py-2">
+            Net profit is actual profit. It’s gross profit, minus ALL other expenses. It’s the number that you as a business owner really care about. And it’s the number we help you maximize.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+</main>
+
+
+<footer>
+  <section class="p-largerScreenPadding py-10">
+    <div class="flex place-content-center place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div class="flex flex-col gap-2">
+        <a href="./contact.html">Contact Us</a>
+        <a href="./privacy.html">Privacy Policy</a>
+      </div>
+
+      <div>
+                    <span
+                            class="font-semibold text-lg">
+                        &copy; Profit Frog
+                    </span>
+
+        <span
+                class="block relative flex gap-1 align-middle items-center hover:bg-gray-300 bg-transparent rounded-2xl group transition-all duration-200 cursor-pointer">
+                        <img src="./assets/images/linkedin.svg" alt="Likedin Logo">
+
+                        <span class="p-1 px-3 transition-all duration-200 group-hover:duration-200">LinkedIn</span>
+                    </span>
+      </div>
+
+
+      <div class="relative">
+        <div class="group p-0 m-0">
+          <span class="font-semibold text-gray-700">Recources</span>
+
+          <div
+                  class="absolute hidden h-max group-hover:flex bg-white rounded shadow-lg border border-gray-200  p-0 w-max max-w-[200px] -left-10"
+                  style="bottom: 30px;"
+          >
+            <ul class="flex flex-col gap-3 text-sm">
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./understanding-cogs.html">Understanding COGS</a></li>
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">What is Dynamic Planing</a></li>
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">What is Financial Model?</a></li>
+              <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./dynamic-planning.html">Understanding FP&A</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<script>
+  var titles = document.querySelectorAll('h1')
+  var config = {
+    type:'carousel',
+    perView:1,
+    gap:50,
+    hoverpause:false,
+    autoplay: 6000,
+    animationDuration:1000
+  }
+  var glide = new Glide('.glide',config)
+  glide.on('run.after', function() {
+    titles.forEach(ele=> ele.classList.remove('show'))
+    titles[glide.index].classList.add('show')
+    console.log(glide.index)
+  })
+
+  glide.mount()
+
+</script>
+<style>
+
+  .show {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 350ms ease-in-out 200ms;
+  }
+
+</style>
+
+<script>
+  $(document).ready(function () {
+
+    // Add click events to show faq group
+    $("#faq div.faq-group").click(function () {
+      let __that = $(this);
+      __that.find('.inner').slideToggle();
+      __that.find('svg').toggleClass('rotate-90');
+    });
+  });
+</script>
+</body>
+</html>
