@@ -34,7 +34,7 @@
             <img src="./assets/images/redesign_header_logo.svg" height="70px" width="90px" alt="Logo">
         </a>
 
-        <div class="flex justify-between w-full">
+        <div class="md:flex hidden justify-between w-full">
             <nav class="p-0 m-0 flex items-start">
                 <ul class="flex gap-7 items-center">
                     <li class="group ">
@@ -71,6 +71,61 @@
                 <a class="bg-customGreen hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white" href="./signup.html">Signup</a>
             </div>
         </div>
+
+        <!-- Nav Menu -->
+        <span class="open__aside flex align-middle group justify-center">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-8 h-8 group-hover:stroke:text-blue-600 duration-300 group-hover:duration-300">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"></path>
+            </svg>
+        </span>
+
+
+        <aside>
+            <section class="p-10 m-0 bg-white fixed flex justify-between flex-col z-50 top-0 h-full w-full left-0 bottom-0 right-0">
+
+                <!-- CLose Nav -->
+                <span class="close__aside flex align-middle group justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-8 h-8 group-hover:stroke:text-blue-600 duration-300 group-hover:duration-300">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                </span>
+                <nav class="p-0 m-0 flex items-start">
+                    <ul class="flex flex-col gap-7">
+                        <li class="group ">
+                            <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./profitability-modeling.html">Profitability Modeling</a>
+                        </li>
+                        <li class="group ">
+                            <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./scenario-planning.html">Scenario Planning</a>
+                        </li>
+                        <li class="group ">
+                            <a class="font-semibold py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md hover:text-customGreen cursor-pointer hover:border-active" href="./pricing.html">Pricing</a>
+                        </li>
+        
+                        <li class="group relative">
+                            <span class="font-semibold flex items-center align-center gap-1 py-7 border-b-4 border-transparent transiton-all duration-200 rounded-tl-sm rounded-tr-md " href="#">
+                                <span>Info</span>
+        
+                                <span class="group-hover:rotate-90 stroke:bg-gray-600 transition-all duration-200">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                                </span>
+                            </span>
+        
+                            <div class="relative hidden h-max group-hover:flex bg-white rounded shadow-lg border border-gray-200 left-0 p-0 w-max max-w-[200px]">
+                                <ul class="flex flex-col gap-3">
+                                    <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./blog.html">Blog</a></li>
+                                    <li class="font-medium transition-all duration-200 hover:bg-gray-200"><a class=" px-6 py-2 relative block" href="./about.html">About Us</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <div class="font-semibold flex flex-col gap-4">
+                    <a class="text-gray-700 hover:text-customGreen" href="./login.html">Login</a>
+                    <a class="bg-customGreen w-max hover:bg-customHoverGreen transition-all duration-200 hover:duration-200 p-2 px-5 rounded-lg text-white" href="./signup.html">Signup</a>
+                </div>
+            </section>
+        </aside>
     </header>
 
 
@@ -82,7 +137,7 @@
                 </span>
 
                 <div class="flex flex-col gap-5">
-                    <h1 class="font-[600] text-3xl md:text-4xl lg:text-5xl capitalize leading-tight">Profitability Modeling Software for Small Businesses</h1>
+                    <h1 class="font-[600] text-4xl lg:text-5xl capitalize leading-tight">Profitability Modeling Software for Small Businesses</h1>
 
                     <div class="text-gray-400 font-medium w-full md:w-[80%] lg:w-1/2">
                         Conquer uncertainty with profitability modeling and <a class="text-blue-400 underline inline break-words" href="/scenario-planning.html"> scenario planning</a>&nbsp; superpowers and seize control of your company’s financial destiny.
@@ -129,7 +184,7 @@
                 </div>
                 </div>
 
-            <div>
+            <div class="hidden md:block">
 
                 <img src="./assets/images/dashboard_2.svg" alt="" class="object-cover drop-shadow-xl rounded-2xl">
             </div>
@@ -139,7 +194,7 @@
         <section class="p-largerScreenPadding py-16">
             <h2 class="font-semibold text-3xl text-center mb-4 block relative">See Why Small Businesses Choose Profit Frog</h2>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-10 place-content-center place-items-center">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 pt-10 gap-8 md:gap-3 place-content-center place-items-center">
                 <div><img src="./assets/images/business_1.svg" alt="business_partners"></div>
                 <div><img src="./assets/images/business_2.svg" alt="business_partners"></div>
                 <div><img src="./assets/images/business_3.svg" alt="business_partners"></div>
@@ -188,7 +243,7 @@
                 </div>
                 </div>
 
-            <div class="p-5">
+            <div class="p-5 hidden md:block">
 
                 <img src="./assets/images/help_!.svg" alt="" class="object-cover drop-shadow-xl rounded-2xl">
             </div>
@@ -200,15 +255,15 @@
 
 
             <div class="relative p-0 m-0">
-                <div class="glide px-10 md:px-20">
+                <div class="glide px-8 sm:px-10 md:px-20">
                     <div class="glide__track " data-glide-el="track" >
                         <ul class="glide__slides cursor-pointer">
-                            <li class="glide__slide p-3">
-                                <div class="flex gap-5 place-content-center place-items-center">
-                                    <img src="./assets/images/person_1.avif" class="rounded-full h-64 w-64 border shadow-lg" alt="">
+                            <li class="glide__slide p-2 md:p-3">
+                                <div class="flex flex-col md:flex-row gap-5 place-content-center place-items-center">
+                                    <img src="./assets/images/person_1.avif" class="rounded-full h-52 w-52 sm:h-56 sm:w-56 md:h-64 md:w-64 border shadow-lg" alt="">
 
                                     <div class="flex flex-col gap-3 pl-10">
-                                        <p class="italic font-normal text-lg">
+                                        <p class="italic font-normal text-sm md:text-lg">
                                             Profit Frog truly has no rivals when it comes to budgeting and forecasting software. It is the first online tool that cuts to the chase and is extremely easy to use. Now I can visualize my sales goals in a matter of seconds and get multiple tailored plans that are relevant and achievable.
                                         </p>
 
@@ -216,12 +271,12 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="glide__slide p-3">
-                                <div class="flex gap-5 place-content-center place-items-center">
-                                    <img src="./assets/images/person_1.avif" class="rounded-full h-64 w-64 border shadow-lg" alt="">
+                            <li class="glide__slide p-2 md:p-3">
+                                <div class="flex flex-col md:flex-row gap-5 place-content-center place-items-center">
+                                    <img src="./assets/images/person_1.avif" class="rounded-full h-52 w-52 sm:h-56 sm:w-56 md:h-64 md:w-64 border shadow-lg" alt="">
 
                                     <div class="flex flex-col gap-3 pl-10">
-                                        <p class="italic font-normal text-lg">
+                                        <p class="italic font-normal text-sm md:text-lg">
                                             Profit Frog truly has no rivals when it comes to budgeting and forecasting software. It is the first online tool that cuts to the chase and is extremely easy to use. Now I can visualize my sales goals in a matter of seconds and get multiple tailored plans that are relevant and achievable.
                                         </p>
 
@@ -229,12 +284,12 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="glide__slide p-3">
-                                <div class="flex gap-5 place-content-center place-items-center">
-                                    <img src="./assets/images/person_1.avif" class="rounded-full h-64 w-64 border shadow-lg" alt="">
+                            <li class="glide__slide p-2 md:p-3">
+                                <div class="flex flex-col md:flex-row gap-5 place-content-center place-items-center">
+                                    <img src="./assets/images/person_1.avif" class="rounded-full h-52 w-52 sm:h-56 sm:w-56 md:h-64 md:w-64 border shadow-lg" alt="">
 
                                     <div class="flex flex-col gap-3 pl-10">
-                                        <p class="italic font-normal text-lg">
+                                        <p class="italic font-normal text-sm md:text-lg">
                                             Profit Frog truly has no rivals when it comes to budgeting and forecasting software. It is the first online tool that cuts to the chase and is extremely easy to use. Now I can visualize my sales goals in a matter of seconds and get multiple tailored plans that are relevant and achievable.
                                         </p>
 
@@ -290,7 +345,7 @@
                 </p>
             </div>
 
-            <div class="p-5">
+            <div class="p-5 hidden md:block">
 
                 <img src="./assets/images/forcasting.avif" alt="" class="object-cover drop-shadow-xl rounded-2xl">
             </div>
@@ -427,7 +482,7 @@
 
     <footer>
         <section class="p-largerScreenPadding py-10">
-            <div class="flex place-content-center place-items-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div class=" place-content-center place-items-center gap-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                 <div class="flex flex-col gap-2">
                     <a href="./contact.html">Contact Us</a>
                     <a href="./privacy.html">Privacy Policy</a>
@@ -499,16 +554,6 @@
 
     </style>
 
-    <script>
-        $(document).ready(function () {
-
-            // Add click events to show faq group
-            $("#faq div.faq-group").click(function () {
-                let __that = $(this);
-                __that.find('.inner').slideToggle();
-                __that.find('svg').toggleClass('rotate-90');
-            });
-        });
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
